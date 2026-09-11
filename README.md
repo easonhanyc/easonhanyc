@@ -2,7 +2,7 @@
 
 **MBA / MEng candidate at UC Berkeley — Haas & IEOR.** Three years at **AWS** building analytics products for an $80B sales org. Now I write the PRD, cut the roadmap, and build the thing.
 
-📍 Berkeley, CA · 🎯 **Seeking a Summer 2027 Product Management internship** · 🌐 **[Full portfolio →](https://easonhanyc.github.io)**
+📍 Berkeley, CA · 🎯 **Seeking a Summer 2027 Product Management internship**
 
 ---
 

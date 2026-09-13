@@ -1,0 +1,54 @@
+name: Check profile links
+
+# The portfolio links in this README were dead for days without anything
+# noticing. This is the thing that notices.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 14 * * 1'   # Mondays, 14:00 UTC
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check every URL in README.md
+        run: |
+          set -uo pipefail
+          mapfile -t urls < <(grep -oE 'https?://[^ )"<>]+' README.md | sed 's/[.,]$//' | sort -u)
+          echo "Checking ${#urls[@]} distinct URLs"
+
+          failed=0
+          for url in "${urls[@]}"; do
+            # Follow redirects; retry once for transient network noise.
+            code=$(curl -sSL -o /dev/null -w '%{http_code}' \
+                     --max-time 25 --retry 1 --retry-delay 3 \
+                     -A 'link-check (github actions)' "$url" || echo 000)
+
+            case "$code" in
+              404|410)
+                echo "::error::DEAD ($code) $url"
+                failed=1
+                ;;
+              000)
+                echo "::error::UNREACHABLE $url"
+                failed=1
+                ;;
+              2*|3*)
+                echo "  ok  ($code) $url"
+                ;;
+              *)
+                # 401/403/405/429 are usually bot-blocking, not a dead link.
+                echo "::warning::unverified ($code) $url"
+                ;;
+            esac
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            echo "Dead links found. The profile README is the first thing a recruiter clicks."
+            exit 1
+          fi
+          echo "All links resolve."

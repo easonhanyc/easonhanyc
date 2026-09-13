@@ -18,7 +18,7 @@ My cohort coordinated ad-hoc rides by scrolling a 400-person WhatsApp chat, wher
 |:--:|:---:|:--:|:--:|
 | commits in 6 days | automated checks | feedback-driven iterations | days to launch |
 
-**[📖 Read the case study](https://easonhanyc.github.io/case-studies/tripmatch.html)** · **[📋 The PRD](https://easonhanyc.github.io/artifacts/tripmatch-prd.html)** · **[🏗 Pre-launch architecture review](https://easonhanyc.github.io/artifacts/tripmatch-infrastructure.html)** · **[💻 Source](https://github.com/tripmatch-app/tripmatch-app.github.io)**
+**[📖 Read the case study](https://easonhanyc.github.io/work/tripmatch)** · **[📋 The PRD](https://easonhanyc.github.io/artifacts/tripmatch-prd)** · **[🏗 Pre-launch architecture review](https://easonhanyc.github.io/artifacts/tripmatch-infrastructure)** · **[💻 Source](https://github.com/tripmatch-app/tripmatch-app.github.io)**
 
 ---
 
@@ -26,18 +26,18 @@ My cohort coordinated ad-hoc rides by scrolling a 400-person WhatsApp chat, wher
 
 | | What it shows |
 |---|---|
-| **[TripMatch](https://easonhanyc.github.io/case-studies/tripmatch.html)**<br>*0→1, shipped alone* | Scoping a one-week build with explicit non-goals, iterating on real user feedback, and killing my own architecture rather than shipping a known defect |
-| **[AWS Sales Insights Platform](https://easonhanyc.github.io/case-studies/aws-insights-platform.html)**<br>*0→1 at scale* | Owning an end-to-end launch for **10,000 sellers** — user interviews, PRD, Figma, roadmap. **70% less time-to-insight**; data-request resolution **56% → 82%** |
-| **[AI Code-Review Automation](https://easonhanyc.github.io/case-studies/ai-code-review.html)**<br>*AI product judgment* | Shipping an agentic tool that cut manual review time **80%** — and deciding which parts of the review it was *allowed to be wrong about* |
+| **[TripMatch](https://easonhanyc.github.io/work/tripmatch)**<br>*0→1, shipped alone* | Scoping a one-week build with explicit non-goals, iterating on real user feedback, and killing my own architecture rather than shipping a known defect |
+| **[AWS Sales Insights Platform](https://easonhanyc.github.io/work/aws-insights-platform)**<br>*0→1 at scale* | Owning an end-to-end launch for **10,000 sellers** — user interviews, PRD, Figma, roadmap. **70% less time-to-insight**; data-request resolution **56% → 82%** |
+| **[AI Code-Review Automation](https://easonhanyc.github.io/work/ai-code-review)**<br>*AI product judgment* | Shipping an agentic tool that cut manual review time **80%** — and deciding which parts of the review it was *allowed to be wrong about* |
 
 ## 🧰 Artifacts
 
 Working documents, not just summaries — so the reasoning is inspectable rather than asserted.
 
-- **[TripMatch PRD](https://easonhanyc.github.io/artifacts/tripmatch-prd.html)** — problem framing, non-goals, user stories, P0/P1/P2 with acceptance criteria, success metrics, and the open questions I never closed
-- **[Pre-launch architecture review](https://easonhanyc.github.io/artifacts/tripmatch-infrastructure.html)** — what would have broken, at what load, and the mitigation
-- **[Prioritization framework](https://easonhanyc.github.io/artifacts/prioritization-framework.html)** — four ordered gates for cutting a roadmap, and why scoring an incomparable list is theater
-- **[Metric trees & scenario forecasting](https://easonhanyc.github.io/artifacts/metric-tree.html)** — separating liquidity failure from discoverability failure; forecasting a category with no history
+- **[TripMatch PRD](https://easonhanyc.github.io/artifacts/tripmatch-prd)** — problem framing, non-goals, user stories, P0/P1/P2 with acceptance criteria, success metrics, and the open questions I never closed
+- **[Pre-launch architecture review](https://easonhanyc.github.io/artifacts/tripmatch-infrastructure)** — what would have broken, at what load, and the mitigation
+- **[Prioritization framework](https://easonhanyc.github.io/artifacts/prioritization-framework)** — four ordered gates for cutting a roadmap, and why scoring an incomparable list is theater
+- **[Metric trees & scenario forecasting](https://easonhanyc.github.io/artifacts/metric-tree)** — separating liquidity failure from discoverability failure; forecasting a category with no history
 
 ---
 
